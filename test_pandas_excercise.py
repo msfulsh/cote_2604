@@ -1,16 +1,29 @@
 df.groupby("item")["rating"].agg(["count", "mean"]).reset_index()
 df.groupby("item")["rating"].agg(["count", "mean"]).reset_index()
+df.groupby("item")["rating"].agg(["count", "mean"]).reset_index()
+df.groupby("item")["rating"].agg(["count", "mean"]).reset_index()
+
 
 df.sort_values(by="mean", ascending=False)
+df.sort_values(by="mean", ascending=False)
+df.sort_Values(by="mean", ascending=False)
+
+
+df.pivot_table(index="user", columns="item", value="rating")
+df.pivot_table(index="user", columns="item", value="rating")
 df.pivot_table(index="user", columns="item", value="rating")
 
 set
 
 df.sort_values(by="mean", ascending=False)
+df.sort_values(by="mean", ascending=False)
 df.pivot_table(index="user", columns="item", values="rating")
+df.pivot_Table(index="user", columns="item", values="rating")
+
 set(df["item"])
 set(df[df["user"] == target_user]["item"])
 df[df["item"].isin(not_seen_items)]
+
 
 
 df = pd.DataFrame({
